@@ -1,0 +1,688 @@
+@font-face {
+    font-family: 'easyTricks';
+    src: url('/assets/fonts/5a3033376960ff664bb92c0c243da3011702041707.ttf');
+}
+
+@font-face {
+    font-family: 'smallfont';
+    src: url('/assets/fonts/0100a0ee4be206e93dabfd0f73c717811702041677.ttf');
+}
+
+@font-face {
+    font-family: 'eternal';
+    src: url('/assets/fonts/Merriweather-VariableFont_opsz\,wdth\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'font1';
+    src: url('/assets/fonts/b5c515bbb53cc9cc12b22819e844fa261702041808.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ================= SECTION 1 ================= */
+
+.section1 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'easyTricks';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.541);
+    z-index: 1;
+}
+
+.overlay-section {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay-section h1 {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+#small {
+    font-size: 60px;
+}
+
+.overlay-section h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.downloadlogos {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.downloadlogos img {
+    width: 200px;
+    height: 60px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* ================= SECTION 2 ================= */
+
+.section2 {
+    position: relative;
+    min-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#text {
+    color: #333;
+    text-align: center;
+    z-index: 1;
+    max-width: 500px;
+}
+
+#text h1 {
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #e23744;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-family: 'easyTricks';
+}
+
+#text h2 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.7;
+    font-family: 'smallfont';
+}
+
+.first-img {
+    position: absolute;
+    left: 150px;
+    top: 50%;
+    transform: translateY(-40%);
+    z-index: 1;
+}
+
+.first-img img {
+    width: 1000px;
+    transform: translateX(-800px);
+    object-fit: contain;
+}
+
+.second-img {
+    position: absolute;
+    right: 150px;
+    top: 50%;
+    transform: translateY(-55%);
+    z-index: 1;
+}
+
+.second-img img {
+    transform: translateX(800px);
+    width: 1000px;
+    object-fit: contain;
+}
+
+#pizza {
+    width: 14%;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    right: 15%;
+}
+
+#burgur {
+    width: 14%;
+    position: absolute;
+    z-index: 1;
+    top: 35%;
+    left: 13%;
+}
+
+#modak {
+    width: 14%;
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    right: 10%;
+}
+
+#feature-bar {
+    color: rgb(89 99 120);
+    font-family: 'easyTricks';
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.347);
+    width: 50%;
+    padding: 20px 20px;
+    margin: 0px auto;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+
+.border {
+    border-right: 1px solid rgba(128, 128, 128, 0.352);
+    padding-right: 40px;
+}
+
+.numbers {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.names {
+    font-size: 15px;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.app {
+    background: linear-gradient(0deg, #FFFFFF 0%, #FFEDEF 100%);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.app h1 {
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #e23744;
+    line-height: 1.2;
+    margin-top: 170px;
+    font-family: 'easyTricks';
+}
+
+.app h2 {
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.5;
+    font-family: 'smallfont';
+    margin-bottom: 10px;
+}
+
+#flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#mainimg {
+    position: relative;
+    display: inline-block;
+}
+
+#main-img {
+    display: block;
+}
+
+#card {
+    position: absolute;
+    top: 35%;
+    z-index: 999;
+    margin-left: 90px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.407);
+    border-radius: 20px;
+    padding: 5px 0px;
+}
+
+#card h2 {
+    font-size: 15px;
+}
+
+#card1,
+#card2 h3 {
+    color: rgb(80, 78, 78);
+    font-family: 'smallfont';
+}
+
+#card1,
+#card2 {
+    display: flex;
+}
+
+.card h3 {
+    font-size: 12px;
+}
+
+.card {
+    box-shadow: 0px 0px 10px rgba(70, 70, 70, 0.315);
+    border-radius: 15px;
+    margin: 15px;
+    padding: 15px 0px;
+}
+
+#firstblock,
+#thirdblock {
+    margin-top: 20px;
+}
+
+#shadow-box {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0px -14px 9px 7px rgb(255, 255, 255);
+    height: 2vh;
+    background-color: white;
+}
+
+#gold {
+    position: relative;
+    margin-top: 20px;
+}
+
+#gold-line {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#gold #bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+}
+
+#tag {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'easyTricks';
+}
+
+#gold-line h1 {
+    font-size: 90px;
+    font-family: 'easyTricks';
+}
+
+#small-line,
+#gold-line h1 {
+    color: rgb(237, 159, 15);
+}
+
+#small-line {
+    font-family: 'smallfont';
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+#gold-second {
+    margin-top: 30px;
+}
+
+#gold-second i {
+    color: rgb(237, 159, 15);
+}
+
+#gold-second h1 {
+    font-family: 'smallfont';
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+#gold-third {
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#gold-third img {
+    padding: 1px;
+    border-radius: 50px;
+    border: 1px solid rgba(232, 202, 33, 0.196);
+}
+
+.first,
+.second {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-family: 'smallfont';
+}
+
+#tagline {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+#breif {
+    font-size: 15px;
+    color: rgb(237, 159, 15);
+}
+
+.gold-coins {
+    top: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+#goldcoin2 {
+    margin-left: 300px;
+    margin-top: 40px;
+}
+
+.brand-section {
+    width: 100%;
+    color: black;
+    margin-bottom: 50px;
+}
+
+.brand-section h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-family: 'eternal';
+    font-size: 95px;
+    font-weight: 900;
+}
+
+.brand-section h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #767C8F;
+    text-align: center;
+    font-family: 'smallfont';
+    letter-spacing: 3px;
+}
+
+.sub-brands {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.sub-brands a {
+    text-decoration: none;
+}
+
+.box {
+    width: 256px;
+    text-align: center;
+    padding: 35px 20px;
+    cursor: pointer;
+    font-family: 'easyTricks';
+    border: 3px solid rgba(0, 0, 0, 0);
+    color: black;
+    border-radius: 32px;
+    position: relative;
+    transition: transform 0.1s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.box img {
+    border-radius: 32px;
+    margin: 15px;
+}
+
+.zomato {
+    border-color: rgb(254 226 226);
+    background: linear-gradient(40deg, #ffffff, #ffd6d6);
+}
+
+.blinkit {
+    border-color: rgb(250 236 189);
+    background: linear-gradient(40deg, #f3f3f3, #fff7b0);
+}
+
+.district {
+    border-color: rgb(223 207 255);
+    background: linear-gradient(46deg, #e3e3e3, #eaedfe);
+}
+
+.hyperpure {
+    border-color: rgb(254 226 226);
+    background: linear-gradient(40deg, #ffffff, #ffd6d6);
+}
+
+#brief-line {
+    margin-top: 15px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: rgb(89 99 120);
+    margin-bottom: 30px;
+}
+
+#btn {
+    font-size: 13px;
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+}
+
+#download-app {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-container {
+    overflow-y: hidden;
+    background: linear-gradient(358deg, #fde7e7 0%, #ffffff 100%);
+    width: 80%;
+    padding-left: 48px;
+    padding-right: 40px;
+    padding-top: 60px;
+    border-radius: 32px;
+    border: 4px solid rgb(254 226 226);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#app-block-1 {
+    width: 35%;
+}
+
+#app-block-1 h1 {
+    font-size: 30px;
+    color: black;
+    padding: 5px;
+    font-family: 'easyTricks';
+    letter-spacing: 1px;
+}
+
+#app-block-1 p {
+    font-family: 'smallfont';
+    font-weight: bold;
+    color: rgb(89 99 120);
+    font-size: 17px;
+    letter-spacing: 1px;
+    padding: 5px;
+}
+
+.app-logos {
+    gap: 20px;
+    display: flex;
+    padding: 5px;
+}
+
+.app-logos img {
+    margin-top: 30px;
+}
+
+#app-block-2 {
+    position: relative;
+}
+
+.card-scan span {
+    color: rgb(89 99 120);
+    font-family: 'smallfont';
+    font-weight: 600;
+}
+
+.card-scan {
+    display: flex;
+    position: absolute;
+    color: black;
+    top: 25%;
+    margin-left: 80px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card-scan img {
+    margin-top: 20px;
+}
+
+.hover-btns {
+    transition: transform 0.1s ease;
+    cursor: pointer;
+}
+
+.hover-btns:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    margin-top: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+.main-footer {
+    width: 50%;
+}
+
+.main-footer h1 {
+    font-family: 'easyTricks';
+    font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.main-navdiv {
+    font-family: 'smallfont';
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.main-navdiv p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main-navdiv ul li {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+#eternal ul li,
+#restaurants ul li,
+#delivery ul li,
+#moreinfo ul li {
+    list-style: none;
+}
+
+#eternal ul li a,
+#restaurants ul li a,
+#delivery ul li a,
+#moreinfo ul li a,
+#icons a {
+    color: gray;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#moreinfo ul li a:hover {
+    color: white;
+}
+
+#eternal ul li a:hover,
+#restaurants ul li a:hover,
+#delivery ul li a:hover {
+    color: rgb(224, 224, 224);
+}
+
+#icons i {
+    background-color: white;
+    color: black;
+    padding: 3px;
+    border-radius: 50px;
+}
+
+#download-icon {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#license {
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    font-size: 9px;
+    font-family: 'smallfont';
+    color: gray;
+}
