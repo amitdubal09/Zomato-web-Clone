@@ -8,6 +8,7 @@ This is a front-end Zomato clone website built using HTML, CSS, JavaScript, and 
 🎯 Smooth animations using GSAP
 🍽️ Food listing and sections similar to Zomato
 🧭 Easy navigation and user-friendly interface
+⚠️ Responsive design is supported down to 768px — smaller screen devices are not applicable
 
 🛠️ Technologies Used
 HTML5
